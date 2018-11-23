@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>A bunch of cool dogs</title>
+    <script src="js/app.js"></script>
+  </head>
+
+  <body>
+    <div class="heading">
+      <h1 id="website-title">A bunch of cool dogs I saw</h1>
+    </div>
+
+    <div class="website-description">
+      <p>This a website to store picture of all the cool dogs I found</p>
+    </div>
+
+
+    <form id="new-item-form">
+      <div id="form-wrapper">
+        <div class="form-item">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+        </div>
+
+        <div class="form-item">
+          <label for="breed">Breed</label>
+          <input type="text" id="breed">
+        </div>
+
+        <div class="form-item">
+          <label for="animal-image">Image</label>
+          <input type="text" id="animal-image">
+        </div>
+
+        <div class="form-item">
+          <label for="description">Descrption</label>
+          <textarea name="description" rows="8" cols="80" placeholder="Write something about the dog" onclick=""></textarea>
+        </div>
+
+        <input id="submit-button" type="submit" value="save">
+
+      </div>
+    </form>
+
+    <h1 id="dog-list">The Dogs!!</h1>
+
+  </body>
+</html>
