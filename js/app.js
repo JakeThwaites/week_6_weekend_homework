@@ -23,7 +23,9 @@ const handleFormSubmit = function(event) {
   const newDescription = document.createElement('p');
   newBreed.setAttribute("class", "dog-description");
 
-  // newImage.innerHTML = event.target.image.value;
+
+  dogImage = event.target.image.value;
+  // newImage.innerHTML = `<img src= "${dogImage}" alt="a picture of the dog" id="dog-image">`
   newName.textContent = event.target.name.value;
   newBreed.textContent = event.target.breed.value;
   newDescription.textContent = event.target.description.value;
@@ -32,6 +34,8 @@ const handleFormSubmit = function(event) {
 
   dogList.appendChild(newDiv);
   newDiv.setAttribute("class", "dogs");
+  newDiv.appendChild(newImage);
+  newImage.setAttribute("src", dogImage)
   newDiv.appendChild(newName);
   newDiv.appendChild(newBreed);
   newDiv.appendChild(newDescription);
