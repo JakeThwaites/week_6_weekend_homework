@@ -31,6 +31,7 @@ const handleFormSubmit = function(event) {
   const dogList = document.querySelector('#dog-list');
 
   dogList.appendChild(newDiv);
+  newDiv.setAttribute("class", "dogs");
   newDiv.appendChild(newName);
   newDiv.appendChild(newBreed);
   newDiv.appendChild(newDescription);

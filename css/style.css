@@ -1,0 +1,26 @@
+html * {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.heading {
+  background-color: #0FA3B1;
+}
+
+.website-description {
+  background-color: #B5E2FA;
+}
+
+#new-item-form {
+  font-size: 15px;
+}
+
+
+#dog-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 50%;
+}
+
+.dogs {
+  padding: 20px 20px 20px 20px;
+}
