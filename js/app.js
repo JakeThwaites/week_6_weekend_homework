@@ -16,6 +16,7 @@ const handleFormSubmit = function(event) {
   newDiv.setAttribute("class", "dog-info");
   const result = document.querySelector('#dog-list');
   const newImage = document.createElement('img');
+  newImage.setAttribute("class", "dog-image")
   const newName = document.createElement('h3');
   newName.setAttribute("class", "dog-name");
   const newBreed = document.createElement('p');
@@ -25,7 +26,6 @@ const handleFormSubmit = function(event) {
 
 
   dogImage = event.target.image.value;
-  // newImage.innerHTML = `<img src= "${dogImage}" alt="a picture of the dog" id="dog-image">`
   newName.textContent = event.target.name.value;
   newBreed.textContent = event.target.breed.value;
   newDescription.textContent = event.target.description.value;

@@ -4,6 +4,7 @@ html * {
 
 .heading {
   background-color: #0FA3B1;
+  text-align: center;
 }
 
 .website-description {
@@ -26,6 +27,7 @@ html * {
   flex: 0 50%;
 }
 
-#dog-image {
-  size: 50px;
+.dog-image {
+  max-width: 400px;
+  max-height: 400px;
 }
