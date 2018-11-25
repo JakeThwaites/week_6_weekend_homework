@@ -13,7 +13,7 @@ const handleFormSubmit = function(event) {
 
   const form = document.querySelector('#new-item-form');
 
-  const newDiv = document.createElement('div')
+  const newDiv = document.createElement('li')
   newDiv.setAttribute("class", "dog-info");
 
   const result = document.querySelector('#dog-list');
@@ -26,6 +26,7 @@ const handleFormSubmit = function(event) {
 
   const newSex = document.createElement('p');
   newSex.setAttribute("class", "sex")
+
   const newBreed = document.createElement('p');
   newBreed.setAttribute("class", "dog-breed")
 
